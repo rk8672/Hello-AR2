@@ -1,0 +1,67 @@
+/* Styles for the main sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(239, 237, 237, 0.1);
+  color: rgb(6, 6, 6);
+  display: flex;
+  flex-direction: column;
+
+  transition: width 0.3s; 
+  border-right: 1px solid #0000003b;
+}
+
+.logo {
+  color: #552583;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Add margin-bottom for space */
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.link {
+  color: rgb(8, 8, 8);
+  text-decoration: none;
+  margin: 5px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  transition: padding 0.3s; /* Add a transition for smooth padding changes */
+}
+
+.link.active {
+  color: #1890FF;
+  text-decoration: none;
+  margin: 5px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+
+  border-right: 3px solid #1890FF;
+  background: linear-gradient(to right, #E6F7FF, #e6f7ffa0);
+  justify-content: start;
+  transition: padding 0.3s; /* Add a transition for smooth padding changes */
+}
+
+/* Additional styles for the content area */
+.content {
+  padding-left: 250px !important;
+  transition: margin-left 0.3s, transform 0.3s; /* Add transitions for smooth margin and transform changes */
+  margin-left: 0px;
+  transform: translateX(0); /* Initially, not shifted */
+}
